@@ -192,6 +192,9 @@
     <ClInclude Include="include\cef_zip_reader.h">
       <Filter>头文件</Filter>
     </ClInclude>
+    <ClInclude Include="createfiles.h">
+      <Filter>源文件</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="dllmain.cpp">
@@ -200,8 +203,14 @@
     <ClCompile Include="pch.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="createfiles.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Library Include="libcef.lib" />
+    <Library Include="C:\PATH\vcpkg\installed\x86-windows\lib\workflow.lib">
+      <Filter>源文件</Filter>
+    </Library>
   </ItemGroup>
 </Project>
