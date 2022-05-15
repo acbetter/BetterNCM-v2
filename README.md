@@ -1,12 +1,20 @@
-# EasyCEFInject
-A library to inject a piece of javascript to any application that is built with Chromium Embedded Framework.
+# BetterNCM-v2
+### PC版网易云客户端插件管理器
+![Microrange](https://github.com/MicroCBer/BetterNCMPlugins/raw/main/Stylesheets/Theme-Microrange/white.png)
+最新测试兼容版本：`2.9.9`
 
-# How does it work?
-The dll hooked the function `cef_v8context_get_current_context` which will be called every time the application wants to do anything that has to do with javascript, including loading pages and refreshing.
+# 安装
+## Windows
+**若安装了BetterNCM v1 请先卸载**
+将release的`msimg32.dll`放入网易云音乐安装目录中即可
 
-After hooking the function, we can get the current v8 context, and then we can do anything we want.
 
-Enjoy.
+# 插件库
+[BetterNCMPlugins](https://github.com/MicroCBer/BetterNCMPlugins)
 
-# How to use it?
-todo!();
+# 开发
+## JS插件
+参考`cssLoader.js`插件（`/addons/cssLoader.js`）
+
+## CSS插件
+参考 `block.css`（`/addons/stylesheets/block.css`）
