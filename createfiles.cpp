@@ -4,7 +4,7 @@
 #include <fstream>
 #include <iostream>
 #include <string>
-// By skykey
+// By skykey 
 const char* addonsJsonData =
 R"([{"name":"cssLoader","file":"cssLoader.js","enabled":true,"devMode":false},{"name":"debugger","file":"debugger.js","enabled":false,"devMode":false},{"name":"PluginManager","file":"pluginmanager.js","enabled":true,"devMode":false}])";
 const char* cssLoaderJsData =
@@ -92,7 +92,7 @@ const char* pluginManagerJsData = R"(setInterval(function () {
         settings.style.zIndex = "100000"
         settings.id = "betterncmPM"
         // settings.style.background="yellow"
-        settings.innerHTML = "<h3 class='s-fc1 f-ff2' style='font-size:20px;font-weight:800;margin:20px;'>BetterNCM</h3><button class='u-ibtn5' onclick='fetch(\"http://localhost:3248/explorer\")'>´ò¿ªÅäÖÃÎÄ¼ş¼Ğ</button><button class='u-ibtn5' onclick='document.location.reload()'>ÖØÔØÒ³Ãæ</button><div class='plugins'></div>"
+        settings.innerHTML = "<h3 class='s-fc1 f-ff2' style='font-size:20px;font-weight:800;margin:20px;'>BetterNCM</h3><button class='u-ibtn5' onclick='fetch(\"http://localhost:3248/explorer\")'>æ‰“å¼€é…ç½®æ–‡ä»¶å¤¹</button><button class='u-ibtn5' onclick='document.location.reload()'>é‡è½½é¡µé¢</button><div class='plugins'></div>"
         
         document.querySelector(".g-mn-set").appendChild(settings)
     }
@@ -129,13 +129,13 @@ setInterval(function () {
             var addon = addons[x];
             if (addon.enabled) {
                 generated += "<div class='mod'><span>" + addon.file
-                    + "</span><span class='bnbtn' onclick='uninstallmod(\"" + addon.file + "\")'>Ğ¶ÔØ</span>"
-                    + "<span class='bnbtn' onclick='disablemod(\"" + addon.file + "\")'>½ûÓÃ</span>"
+                    + "</span><span class='bnbtn' onclick='uninstallmod(\"" + addon.file + "\")'>å¸è½½</span>"
+                    + "<span class='bnbtn' onclick='disablemod(\"" + addon.file + "\")'>ç¦ç”¨</span>"
                     + "</div>"
             }else{
                 generated += "<div class='mod'><span>" + addon.file
-                    + "</span><span class='bnbtn' onclick='uninstallmod(\"" + addon.file + "\")'>Ğ¶ÔØ</span>"
-                    + "<span class='bnbtn' onclick='enablemod(\"" + addon.file + "\")'>ÆôÓÃ</span>"
+                    + "</span><span class='bnbtn' onclick='uninstallmod(\"" + addon.file + "\")'>å¸è½½</span>"
+                    + "<span class='bnbtn' onclick='enablemod(\"" + addon.file + "\")'>å¯ç”¨</span>"
                     + "</div>"
             }
         }
@@ -281,7 +281,7 @@ const char* UnboundedCssData = R"(#portal_root {
 }
 
 
-/* ¹ö¶¯²Û */
+/* æ»šåŠ¨æ§½ */
 ::-webkit-scrollbar {
     display: none;
 }
